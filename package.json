@@ -1,0 +1,23 @@
+{
+  "name": "peterspringer",
+  "version": "0.0.1",
+  "description": "displays sense-hat sensors on webpage using socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(http://github.com/peterspringer/21spring/issues)"
+  },
+  "keywords": [
+    "sense-hat"
+  ],
+  "author": "Peter Springer",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2",
+    "nodeimu": "^2.1.9",
+    "socket.io": "^1.7.3"
+  }
+}
