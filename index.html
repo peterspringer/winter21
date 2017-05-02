@@ -15,6 +15,7 @@
     </style>
   </head>
   <body>
+    Tilt: <span id = "tiltHeading">...</span>
     <ul id="messages"></ul>
     <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
@@ -33,6 +34,13 @@
           $('#messages').append($('<li>').text(msg));
           window.scrollTo(0, document.body.scrollHeight);
         });
+
+        socket.on('sensors', function(data){
+          console.log('sensors',data);
+          $("#tiltHeading").text(data.tiltHeading);
+        });
+
+
       });
     </script>
   </body>
